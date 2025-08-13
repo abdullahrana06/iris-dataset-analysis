@@ -1,90 +1,91 @@
 # iris-dataset-analysis
 Exploring and visualizing the Iris dataset using Python
+~STEP BY STEP PROCESS-
 
-📊 Exploring and Visualizing the Iris Dataset
-📌 Project Overview
+###📊 Exploring and Visualizing the Iris Dataset
+-📌 Project Overview
 
-This project is part of a data exploration and visualization exercise using the famous Iris flower dataset.
-The goal is to load, inspect, and visualize the dataset to understand its trends, distributions, and relationships.
+-This project is part of a data exploration and visualization exercise using the famous Iris flower dataset.
+-The goal is to load, inspect, and visualize the dataset to understand its trends, distributions, and relationships.
 
-🎯 Objectives
+###🎯 Objectives
 
-Load and inspect the Iris dataset using Pandas.
+-Load and inspect the Iris dataset using Pandas.
 
-View dataset shape, column names, and first rows.
+-View dataset shape, column names, and first rows.
 
-Generate summary statistics.
+-Generate summary statistics.
 
-Visualize the dataset using Matplotlib and Seaborn:
+-Visualize the dataset using Matplotlib and Seaborn:
 
-Scatter plots to show relationships between features.
+-Scatter plots to show relationships between features.
 
-Histograms to visualize value distributions.
+-Histograms to visualize value distributions.
 
-Box plots to detect outliers.
+-Box plots to detect outliers.
 
-🛠️ Tools & Libraries
+###🛠️ Tools & Libraries
 
-Python 3
+-Python 3
 
-Pandas → Data manipulation & analysis
+-Pandas → Data manipulation & analysis
 
-Matplotlib → Data visualization
+-Matplotlib → Data visualization
 
-Seaborn → Advanced visualizations & dataset loading
+-Seaborn → Advanced visualizations & dataset loading
 
-📂 Dataset
+###📂 Dataset
 
-The Iris dataset contains 150 rows and 5 columns:
+-The Iris dataset contains 150 rows and 5 columns:
 
-sepal_length (cm)
+-sepal_length (cm)
 
-sepal_width (cm)
+-sepal_width (cm)
 
-petal_length (cm)
+-petal_length (cm)
 
-petal_width (cm)
+-petal_width (cm)
 
-species (Setosa, Versicolor, Virginica)
+-species (Setosa, Versicolor, Virginica)
 
-🚀 Steps Performed
+###🚀 Steps Performed
 
-Import Libraries
+##Import Libraries
 
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-
-Load Dataset
-
-iris = sns.load_dataset('iris')
+-import pandas as pd
+-import seaborn as sns
+-import matplotlib.pyplot as plt
 
 
-Inspect Data
+##Load Dataset
 
-print(iris.shape)
-print(iris.columns)
-print(iris.head())
-print(iris.info())
-print(iris.describe())
+-iris = sns.load_dataset('iris')
 
 
-Visualizations
+##Inspect Data
 
-Scatter Plot
+-print(iris.shape)
+-print(iris.columns)
+-print(iris.head())
+-print(iris.info())
+-print(iris.describe())
 
-sns.scatterplot(data=iris, x='sepal_length', y='sepal_width', hue='species')
+
+##Visualizations
+
+#Scatter Plot
+
+-sns.scatterplot(data=iris, x='sepal_length', y='sepal_width', hue='species')
 plt.show()
 
 
-Histograms
+#Histograms
 
-iris.hist(figsize=(10, 8))
+-iris.hist(figsize=(10, 8))
 plt.show()
 
 
-Box Plots
+#Box Plots
 
-sns.boxplot(data=iris)
+-sns.boxplot(data=iris)
 plt.show()
